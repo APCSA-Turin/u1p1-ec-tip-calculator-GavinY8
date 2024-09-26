@@ -51,16 +51,15 @@ public class ExtraCredit {
 
         System.out.println("Enter an item name or type '-1' to finish:");
         String item = "a";
-        String items = "";
+        String items = "";          //initializing
 
  
-
         while (!item.equals("-1")) {
             System.out.println("Enter an item name or type '-1' to finish:");
             item = scan.nextLine();
             if (item.equals("-1")) {
-                break;
-            }
+                break;                                                              //learned .equals from https://www.quora.com/How-do-you-check-if-a-string-is-not-equal-to-another-string-in-Java
+            }                                                                       //while loop
             else {
                 items = items + item + "\n";
             }
